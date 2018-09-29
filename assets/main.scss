@@ -206,6 +206,15 @@ ul, ol, dl, figure,
     .footer-content {
       margin-left: 30px;
       color: #FFFFFF;
+
+      *:first-child {
+        margin-top: 0px;
+      }
+
+      a, a:hover, a:visited, a:active {
+        color: #FF1960;
+        text-decoration: none;
+      }
     }
   }
 }
