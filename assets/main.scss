@@ -2,12 +2,137 @@
 ---
 @charset "utf-8";
 
-// h1 144px
-// h2 42px
-// h3 36px
-// h4 h5 16px
+$text-color: #333333 !default;
+$background-color: #1A1A1A !default;
 
-// article
-// h2 24px
+$navbar-height: 80px !default;
 
-@import "minima";
+$navbar-background-color: rgba(255,255,255,0) !default;
+$main-background-color: #FBFBFA !default;
+
+$spacing-unit:     20px !default;
+
+// home: h1 144px, h2 42px, h3 36px, h4 h5 16px
+// article: h2 24px
+
+
+body {
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
+.navbar {
+  background-color: $navbar-background-color;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+
+  height: $navbar-height;
+
+  .navbar-nav {
+    float: right;
+
+    .navbar-nav-link {
+      margin-left: 30px;
+    }
+  }
+}
+
+.main {
+  background-color: $main-background-color;
+
+  > .wrapper {
+    margin-top: $navbar-height;
+  }
+
+  .home {
+    padding-bottom: 100px;
+
+    .site-heading {
+      margin-top: 180px;
+      font-size: 144px;
+    }
+
+    .site-subheading {
+      margin-top: 0px;
+      margin-bottom: 200px;
+      font-size: 36px;
+    }
+
+    .post-list {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin-left: -20px;
+      margin-right: -20px;
+
+      > .post-list-item {
+        width: calc(50% - 40px);
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        .post-link {
+          margin-top: 20px;
+
+          &-title {
+            color: #FFFFFF;
+          }
+
+          &-readmore {
+            color: #FF1960;
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  height: 300px;
+
+  .wrapper {
+    margin: 100px auto 100px auto;
+    width: 500px;
+
+    display: flex;
+    flex-direction: row;
+
+    .footer-content {
+      margin-left: 30px;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.navbar > .wrapper,
+.main > .wrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
