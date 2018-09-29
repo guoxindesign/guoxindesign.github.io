@@ -47,6 +47,7 @@ ul, ol, dl, figure,
 
 .navbar {
   background-color: $navbar-background-color;
+  z-index: 1000;
 
   position: fixed;
   top: 0px;
@@ -122,6 +123,21 @@ ul, ol, dl, figure,
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
+
+        .post-list-item-img {
+          overflow: hidden;
+          height: 0;
+          padding-top: 66.66%;
+          background-size: cover;
+          -o-object-fit: cover;
+          object-fit: cover;
+          background-color: #FFFFFF;
+          border-radius: 2px;
+
+          &:hover {
+            filter: brightness(1.1);
+          }
+        }
 
         .post-link {
           margin-top: 20px;
