@@ -30,7 +30,7 @@ body {
   flex-direction: column;
   margin: 0;
 
-  background-image: url(/images/body-bg.png);
+  background-image: url(/images/body_bg_1000.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -189,6 +189,19 @@ ul, ol, dl, figure,
 
     .article-content {
       margin-top: 65px;
+
+      h1, h2, h3, h4, h5 {
+        line-height: 1.5;
+        opacity: 1;
+      }
+
+      h1 {
+        color: #1A1A1A;
+      }
+
+      h2 {
+        color: #333333;
+      }
     }
   }
 }
