@@ -15,7 +15,7 @@ layout: default
       {%- for post in site.posts -%}
       <div class="post-list-item">
 
-        <a href="{{ post.url | relative_url }}" class='post-list-item-img' style="background-image: url(https://source.unsplash.com/random/600x400?design&sig={{ forloop.index0 }})"></a>
+        <a href="{{ post.url | relative_url }}" class='post-list-item-img' style="background-image: url({{post.cover_image | relative_url}})"></a>
         <div class='post-link'>
           <a class="post-link-title" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
