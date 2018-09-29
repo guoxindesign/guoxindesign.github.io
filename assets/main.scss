@@ -29,6 +29,10 @@ body {
   min-height: 100vh;
   flex-direction: column;
   margin: 0;
+
+  background-image: url(/images/body-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /**
@@ -53,6 +57,7 @@ ul, ol, dl, figure,
 
   .navbar-nav {
     float: right;
+    margin-right: 10px;
 
     .navbar-nav-link {
       margin-left: 30px;
@@ -74,12 +79,16 @@ ul, ol, dl, figure,
     .site-heading {
       margin-top: 180px;
       font-size: 144px;
+
+      color: #FF1960;
+      opacity: .95;
     }
 
     .site-subheading {
       margin-top: 0px;
       margin-bottom: 200px;
       font-size: 36px;
+      opacity: .95;
     }
 
     .post-list {
@@ -150,7 +159,7 @@ ul, ol, dl, figure,
 
 .navbar > .wrapper,
 .main > .wrapper {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 87%;
+  margin-left: 5%;
+  margin-right: 8%;
 }
