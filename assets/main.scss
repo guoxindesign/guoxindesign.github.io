@@ -177,6 +177,9 @@ ul, ol, dl, figure,
     padding-top: 100px;
     padding-bottom: 200px;
 
+    width: 70%;
+    margin-right: 30%;
+
     .article-title {
       font-size: 42px;
       color: #1A1A1A;
@@ -202,6 +205,11 @@ ul, ol, dl, figure,
       h2 {
         color: #333333;
       }
+
+      p {}
+
+      strong {}
+      em { background-color: #CCC;}
     }
   }
 }
