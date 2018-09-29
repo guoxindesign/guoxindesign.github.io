@@ -144,11 +144,29 @@ ul, ol, dl, figure,
 
           &-title {
             color: #FFFFFF;
+            text-decoration: none;
+
+            &:hover, &:active {
+              color: #FF1960;
+            }
+
+            &:visited {
+              color: #B3B3B3;
+            }
+
+            &:visited:hover {
+              color: #FFFFFF;
+            }
           }
 
           &-readmore {
             color: #FF1960;
+            text-decoration: none;
             float: right;
+
+            &:hover, &:visited:hover {
+              text-decoration: underline;
+            }
           }
         }
       }
