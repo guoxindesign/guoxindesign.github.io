@@ -1,0 +1,43 @@
+---
+title: Yongzhentang Teapot
+layout: post
+cover_image: "/images/teapot_cover.png"
+---
+
+# 软考有个题目，懵逼了
+某服装店有甲、乙、丙、丁四个缝制小组。
+
+
+## 甲组每天能缝制 5 件上衣或 6 条裤子：
+乙组每天能缝制 6 件上农或 7 条裤子：
+丙组每天能缝制 7 件上衣或 8 条裤子；
+丁组每天能缝制 8 件上衣或 9 条裤子。
+每组每天要么缝制上衣，要么缝制裤子，不能弄混。
+订单要求上衣和裤子必须配套（每套衣服包括一件上衣和一条裤子）。
+做好**合理安排**，该*服装店* 15 天***最多***能缝制（ ）套衣服
+
+
+
+
+```
+
+body {
+  font-family: $base-font-family;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+
+  background-image: url(/images/body_bg_1000.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+```
