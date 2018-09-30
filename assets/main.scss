@@ -12,6 +12,15 @@ $main-background-color: #FBFBFA !default;
 
 $spacing-unit:     20px !default;
 
+$device-mobile:    800px !default;
+$device-mobile-small:    600px !default;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
 // home: h1 144px, h2 42px, h3 36px, h4 h5 16px
 // article: h2 24px
 
@@ -67,6 +76,10 @@ ul, ol, dl, figure,
     margin-left: auto;
     margin-right: 10px;
 
+    @include media-query($device-mobile) {
+      margin-right: 0px;
+    }
+
     a.navbar-nav-link {
       margin-left: 30px;
       color: #000000;
@@ -100,13 +113,29 @@ ul, ol, dl, figure,
 
       color: #FF1960;
       opacity: .95;
+
+      @include media-query($device-mobile) {
+        font-size: 72px;
+      }
+
+      @include media-query($device-mobile-small) {
+        font-size: 48px;
+      }
     }
 
     .site-subheading {
-      margin-top: 0px;
-      margin-bottom: 200px;
       font-size: 36px;
       opacity: .95;
+      margin-top: 0px;
+      margin-bottom: 200px;
+
+      @include media-query($device-mobile) {
+        font-size: 28px;
+        margin-bottom: 150px;
+      }
+      @include media-query($device-mobile-small) {
+        font-size: 24px;
+      }
     }
 
     .post-list {
@@ -116,9 +145,20 @@ ul, ol, dl, figure,
       margin-left: -20px;
       margin-right: -20px;
 
+      @include media-query($device-mobile) {
+        margin-left: 0px;
+        margin-right: 70px;
+      }
+
       > .post-list-item {
         width: calc(50% - 40px);
-        padding: 20px;
+        padding: 0px 20px;
+
+        @include media-query($device-mobile) {
+          width: 100%;
+          padding: 0px;
+          margin-bottom: 50px;
+        }
 
         display: flex;
         flex-direction: column;
@@ -141,6 +181,11 @@ ul, ol, dl, figure,
 
         .post-link {
           margin-top: 20px;
+          line-height: 1.5;
+
+          @include media-query($device-mobile) {
+            margin-top: 10px;
+          }
 
           &-title {
             color: #FFFFFF;
@@ -163,6 +208,12 @@ ul, ol, dl, figure,
             color: #FF1960;
             text-decoration: none;
             float: right;
+            line-height: 1.5;
+
+            @include media-query($device-mobile) {
+              display: block;
+              float: none;
+            }
 
             &:hover, &:visited:hover {
               text-decoration: underline;
@@ -179,6 +230,11 @@ ul, ol, dl, figure,
 
     width: 70%;
     margin-right: 30%;
+
+    @include media-query($device-mobile) {
+      width: 100%;
+      margin: 0px;
+    }
 
     .article-title {
       font-size: 42px;
@@ -240,9 +296,26 @@ ul, ol, dl, figure,
   }
 }
 
-.navbar > .wrapper,
+.navbar > .wrapper {
+  width: 87%;
+  margin-left: 5%;
+  margin-right: 8%;
+
+  @include media-query($device-mobile) {
+    width: unset;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
 .main > .wrapper {
   width: 87%;
   margin-left: 5%;
   margin-right: 8%;
+
+  @include media-query($device-mobile) {
+    width: unset;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }

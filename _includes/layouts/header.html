@@ -1,6 +1,6 @@
 <header class="navbar" role="navbar">
   <div class="wrapper">
-    <img class="navbar-logo" src="/images/logo.png" />
+    <a class="navbar-logo" href='{{ site.baseurl | absolute_url }}'><img src="/images/logo.png" /></a>
 
     <nav class="navbar-nav">
 {%- assign default_paths = site.pages | map: "path" -%}
