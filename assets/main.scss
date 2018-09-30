@@ -121,7 +121,7 @@ ul, ol, dl, figure,
     padding-bottom: 100px;
 
     .site-heading {
-      margin-top: 180px;
+      margin-top: 220px;
       font-size: 144px;
 
       color: #FF1960;
@@ -138,9 +138,10 @@ ul, ol, dl, figure,
 
     .site-subheading {
       font-size: 36px;
+      letter-spacing: 2px
       opacity: .95;
       margin-top: 0px;
-      margin-bottom: 200px;
+      margin-bottom: 220px;
 
       @include media-query($device-mobile) {
         font-size: 28px;
