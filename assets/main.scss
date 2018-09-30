@@ -2,6 +2,9 @@
 ---
 @charset "utf-8";
 
+$base-font-family: Garamond, -apple-system !default;
+$content-font-family: AvenirNext-Regular, -apple-system !default;
+
 $text-color: #333333 !default;
 $background-color: #1A1A1A !default;
 
@@ -26,6 +29,7 @@ $device-mobile-small:    600px !default;
 
 
 body {
+  font-family: $base-font-family;
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
@@ -153,6 +157,7 @@ ul, ol, dl, figure,
       > .post-list-item {
         width: calc(50% - 40px);
         padding: 0px 20px;
+        margin-bottom: 80px;
 
         @include media-query($device-mobile) {
           width: 100%;
@@ -188,6 +193,7 @@ ul, ol, dl, figure,
           }
 
           &-title {
+            font-family: $content-font-family;
             color: #FFFFFF;
             text-decoration: none;
 
@@ -205,6 +211,7 @@ ul, ol, dl, figure,
           }
 
           &-readmore {
+            font-family: $content-font-family;
             color: #FF1960;
             text-decoration: none;
             float: right;
@@ -225,6 +232,8 @@ ul, ol, dl, figure,
   }
 
   .article {
+    font-family: $content-font-family;
+
     padding-top: 100px;
     padding-bottom: 200px;
 
