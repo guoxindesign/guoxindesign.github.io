@@ -127,6 +127,7 @@ ul, ol, dl, figure,
       letter-spacing: 4px;
       color: #FF1960;
       opacity: .95;
+      white-space: nowrap;
 
       @include media-query($device-mobile) {
         font-size: 72px;
@@ -143,6 +144,7 @@ ul, ol, dl, figure,
       opacity: 0.95;
       margin-top: 0px;
       margin-bottom: 220px;
+      white-space: nowrap;
 
       @include media-query($device-mobile) {
         font-size: 28px;
