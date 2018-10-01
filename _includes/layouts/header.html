@@ -12,7 +12,7 @@
       {%- if my_page.url != page.url -%}
         <a class="navbar-nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
       {%- else -%}
-        <a class="navbar-nav-link active" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        <a class="navbar-nav-link active" disabled tabindex="-1" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
       {%- endif -%}
     {%- endif -%}
   {%- endfor -%}

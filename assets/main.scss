@@ -44,6 +44,11 @@ body {
   background-size: contain;
 }
 
+a[disabled] {
+  pointer-events: none;
+  cursor: default;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
@@ -94,10 +99,7 @@ ul, ol, dl, figure,
 
       border-bottom: rgba(255,255,255,0) solid 1px;
 
-      &.active {
-        color: #FF1960;
-      }
-
+      &.active,
       &:hover {
         color: #FF1960;
         border-bottom: #FF1960 solid 1px;
