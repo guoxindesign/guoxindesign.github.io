@@ -276,6 +276,10 @@ ul, ol, dl, figure,
       width: 100%;
       margin: 0px;
     }
+    
+    p > img {
+      max-width: 100%;
+    }
 
     .article-title {
       font-size: 42px;
