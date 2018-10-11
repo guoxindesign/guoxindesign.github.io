@@ -4,9 +4,9 @@
 
     <nav class="navbar-nav">
       {%- if '/' != page.url -%}
-        <a class="navbar-nav-link" href="/">{{ my_page.title | escape }}</a>
+        <a class="navbar-nav-link" href="/">Projects</a>
       {%- else -%}
-        <a class="navbar-nav-link active" disabled tabindex="-1" href="/">{{ my_page.title | escape }}</a>
+        <a class="navbar-nav-link active" disabled tabindex="-1" href="/">Projects</a>
       {%- endif -%}
 {%- assign default_paths = site.pages | map: "path" -%}
 {%- assign page_paths = site.header_pages | default: default_paths -%}
