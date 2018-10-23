@@ -327,10 +327,15 @@ ul, ol, dl, figure,
 
   .wrapper {
     margin: 100px auto 100px auto;
-    max-width: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     display: flex;
     flex-direction: row;
+
+    @include media-query($device-mobile) {
+      max-width: 500px;
+    }
 
     .footer-content {
       margin-left: 30px;
