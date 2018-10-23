@@ -333,6 +333,7 @@ ul, ol, dl, figure,
 
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
     @include media-query($device-mobile) {
       max-width: 500px;
