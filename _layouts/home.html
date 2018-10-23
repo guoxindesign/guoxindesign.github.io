@@ -29,7 +29,7 @@ layout: default
 
         <a href="#" disabled class='post-list-item-img' style="background-image: url({{post.cover_image | relative_url}})"></a>
         <div class='post-link'>
-          <a disabled class="post-link-title" href="#">
+          <a disabled class="post-link-title" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
         </div>
