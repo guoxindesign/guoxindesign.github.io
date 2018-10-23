@@ -154,7 +154,7 @@ ul, ol, dl, figure,
       white-space: nowrap;
 
       @include media-query($device-mobile) {
-        margin-top: 100px;
+        margin-top: 150px;
         font-size: 72px;
       }
 
@@ -173,7 +173,7 @@ ul, ol, dl, figure,
 
       @include media-query($device-mobile) {
         font-size: 28px;
-        margin-bottom: 50px;
+        margin-bottom: 80px;
       }
       @include media-query($device-mobile-small) {
         font-size: 24px;
