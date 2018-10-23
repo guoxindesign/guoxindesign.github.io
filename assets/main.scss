@@ -12,6 +12,7 @@ $background-gradien-color-top: #FFFFFF !default;
 $background-gradien-color-bottom: $background-color !default;
 
 $navbar-height: 80px !default;
+$navbar-height-mobile: 60px !default;
 
 $navbar-background-color: rgba(255,255,255,0) !default;
 $main-background-color: #FBFBFA !default;
@@ -79,6 +80,9 @@ ul, ol, dl, figure,
   right: 0px;
 
   height: $navbar-height;
+  @include media-query($device-mobile) {
+    height: $navbar-height-mobile;
+  }
 
   .wrapper {
     height: 100%;
@@ -123,6 +127,9 @@ ul, ol, dl, figure,
 
   > .wrapper {
     margin-top: $navbar-height;
+    @include media-query($device-mobile) {
+      margin-top: $navbar-height-mobile;
+    }
   }
 
   .home {
@@ -173,7 +180,7 @@ ul, ol, dl, figure,
 
       @include media-query($device-mobile) {
         margin-left: 0px;
-        margin-right: 70px;
+        margin-right: 20px;
       }
 
       > .post-list-item {
@@ -184,7 +191,7 @@ ul, ol, dl, figure,
         @include media-query($device-mobile) {
           width: 100%;
           padding: 0px;
-          margin-bottom: 50px;
+          margin-bottom: 30px;
         }
 
         display: flex;
@@ -342,8 +349,8 @@ ul, ol, dl, figure,
 
   @include media-query($device-mobile) {
     width: unset;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -354,7 +361,7 @@ ul, ol, dl, figure,
 
   @include media-query($device-mobile) {
     width: unset;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
