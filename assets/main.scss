@@ -12,7 +12,7 @@ $background-gradien-color-top: #FFFFFF !default;
 $background-gradien-color-bottom: $background-color !default;
 
 $navbar-height: 80px !default;
-$navbar-height-mobile: 60px !default;
+$navbar-height-mobile: 50px !default;
 
 $navbar-background-color: rgba(255,255,255,0) !default;
 $main-background-color: #FBFBFA !default;
@@ -89,6 +89,14 @@ ul, ol, dl, figure,
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  .navbar-logo, .navbar-logo > img {
+    height: 24px;
+
+    @include media-query($device-mobile) {
+      height: 20px;
+    }
   }
 
   .navbar-nav {
