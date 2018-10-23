@@ -339,13 +339,21 @@ ul, ol, dl, figure,
     flex-direction: row;
     justify-content: center;
 
-    @include media-query($device-mobile) {
-      max-width: 500px;
+    .footer-image {
+      min-width: 80px;
+      min-height: 80px;
+      width: 80px;
+      height: 80px;
     }
 
     .footer-content {
       margin-left: 30px;
       color: #FFFFFF;
+      max-width: 40%;
+
+      @include media-query($device-mobile) {
+        max-width: 80%;
+      }
 
       *:first-child {
         margin-top: 0px;
