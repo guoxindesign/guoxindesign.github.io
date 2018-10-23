@@ -272,7 +272,7 @@ ul, ol, dl, figure,
   .article {
     font-family: $content-font-family;
 
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 200px;
 
     width: 70%;
@@ -327,7 +327,7 @@ ul, ol, dl, figure,
 
   .wrapper {
     margin: 100px auto 100px auto;
-    width: 500px;
+    max-width: 500px;
 
     display: flex;
     flex-direction: row;
