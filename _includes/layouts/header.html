@@ -5,6 +5,8 @@
     <nav class="navbar-nav">
       {%- if '/' == page.url -%}
         <a class="navbar-nav-link active" disabled tabindex="-1" href="/">Projects</a>
+      {%- elsif page.layout == 'post' -%}
+        <a class="navbar-nav-link active" disabled tabindex="-1" href="/">Projects</a>
       {%- else -%}
         <a class="navbar-nav-link" href="/">Projects</a>
       {%- endif -%}
