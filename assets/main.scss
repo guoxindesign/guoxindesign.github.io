@@ -210,10 +210,10 @@ ul, ol, dl, figure,
           object-fit: cover;
           background-color: rgba(255,255,255,0.1);
           border-radius: 2px;
+        }
 
-          &:hover {
-            filter: brightness(1.1);
-          }
+        &.item-type-post .post-list-item-img:hover {
+          filter: brightness(1.1);
         }
 
         .post-link {
@@ -276,7 +276,7 @@ ul, ol, dl, figure,
       width: 100%;
       margin: 0px;
     }
-    
+
     p > img {
       max-width: 100%;
     }
@@ -333,7 +333,7 @@ ul, ol, dl, figure,
       *:first-child {
         margin-top: 0px;
       }
-      
+
       h3 {
       }
 

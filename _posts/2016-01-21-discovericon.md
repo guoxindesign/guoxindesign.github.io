@@ -1,5 +1,5 @@
 ---
 title: Discover Icon
-layout: post
+layout: nil
 cover_image: "/images/discovericon_cover.jpg"
 ---

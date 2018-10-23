@@ -13,7 +13,8 @@ layout: default
   {%- if site.posts.size > 0 -%}
     <div class="post-list">
       {%- for post in site.posts -%}
-      <div class="post-list-item">
+        {%- if post.layout == 'post' -%}
+      <div class="post-list-item item-type-post">
 
         <a href="{{ post.url | relative_url }}" class='post-list-item-img' style="background-image: url({{post.cover_image | relative_url}})"></a>
         <div class='post-link'>
@@ -23,6 +24,17 @@ layout: default
           <a class="post-link-readmore" href="{{ post.url | relative_url }}">Read More ⟶</a>
         </div>
       </div>
+        {%- else -%}
+      <div class="post-list-item item-type-coveronly">
+
+        <a href="#" disabled class='post-list-item-img' style="background-image: url({{post.cover_image | relative_url}})"></a>
+        <div class='post-link'>
+          <a disabled class="post-link-title" href="#">
+            {{ post.title | escape }}
+          </a>
+        </div>
+      </div>
+        {%- endif -%}
       {%- endfor -%}
     </div>
   {%- endif -%}
