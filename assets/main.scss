@@ -349,7 +349,7 @@ ul, ol, dl, figure,
     .footer-content {
       margin-left: 30px;
       color: #FFFFFF;
-      max-width: 40%;
+      max-width: 360px;
 
       @include media-query($device-mobile) {
         max-width: 80%;
