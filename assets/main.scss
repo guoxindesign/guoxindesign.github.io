@@ -232,7 +232,7 @@ ul, ol, dl, figure,
 
           &-title {
             font-family: $content-font-family;
-            color: #B3B3B3;
+            color: #FFFFFF;
             text-decoration: none;
 
             &:hover, &:active {
@@ -245,6 +245,10 @@ ul, ol, dl, figure,
 
             &:visited:hover {
               color: #FFFFFF;
+            }
+
+            &[disabled] {
+              color: #B3B3B3;
             }
           }
 
