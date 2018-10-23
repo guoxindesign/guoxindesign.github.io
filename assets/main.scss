@@ -105,10 +105,13 @@ ul, ol, dl, figure,
 
       border-bottom: rgba(255,255,255,0) solid 1px;
 
-      &.active,
-      &:hover {
+      &.active {
         color: #FF1960;
         border-bottom: #FF1960 solid 1px;
+      }
+
+      &:hover {
+        color: #FF1960;
       }
     }
   }
