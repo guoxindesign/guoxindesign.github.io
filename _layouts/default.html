@@ -3,7 +3,11 @@
 
   {%- include layouts/head.html -%}
 
+  {%- if page.layout == 'page' -%}
+  <body style="background-image: unset;">
+  {%- else -%}
   <body style="background-image: url(/images/body_bg_1000.jpg);">
+  {%- endif -%}
 
   {%- include layouts/header.html -%}
 
