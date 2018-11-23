@@ -131,7 +131,7 @@ ul, ol, dl, figure,
 
 .main {
   background-color: $main-background-color;
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 160px);
 
   > .wrapper {
     margin-top: $navbar-height;
