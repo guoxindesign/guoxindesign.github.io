@@ -174,9 +174,11 @@ ul, ol, dl, figure,
       @include media-query($device-mobile) {
         font-size: 28px;
         margin-bottom: 80px;
+        color: #EEEEEE;
       }
       @include media-query($device-mobile-small) {
         font-size: 24px;
+        color: #EEEEEE;
       }
     }
 
