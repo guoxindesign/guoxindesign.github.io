@@ -1,5 +1,5 @@
 ---
-title: 焦点小组访谈笔记
+title: Focus Group Note
 layout: post
 cover_image: "/images/questionaire_cover.jpg"
 ---
