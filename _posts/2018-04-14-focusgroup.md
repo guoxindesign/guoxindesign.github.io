@@ -1,7 +1,7 @@
 ---
 title: 焦点小组访谈笔记
 layout: post
-cover_image: "/images/focusgroup_cover.jpg"
+cover_image: "/images/questionaire_cover.jpg"
 ---
 在准备调研的过程，把焦点小组的流程及一些要点又温习了一下：
 
@@ -122,5 +122,11 @@ cover_image: "/images/focusgroup_cover.jpg"
 
 ## 第六轮，发散和总结（20mins）
 - 讨论快结束了，我想请大家再来一次快速头脑风暴，问题只有一个。但希望各位都先思考一下再回答。您希望我们的产品如何改进？最后，看得出来大家讨论的都很兴奋，但我们不得不结束了。如果您回家后还想到什么，欢迎随时告诉我们。再次感谢大家的参与！
+
+
+
+附，总结了一下跨境电商的调研框架
+
+![](/images/questionaire_1.jpg)
 
 
