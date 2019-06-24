@@ -1,5 +1,5 @@
 ---
-title: Research on Virtus Content
+title: MICAI Finance Research
 layout: post
 cover_image: "/images/micai_research_cover.jpg"
 ---
