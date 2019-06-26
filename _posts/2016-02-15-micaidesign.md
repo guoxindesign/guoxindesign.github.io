@@ -1,5 +1,5 @@
 ---
-title: Internet Finance Design
+title: MICAI Design
 layout: post
 cover_image: "/images/micaidesign_cover5.jpg"
 ---
