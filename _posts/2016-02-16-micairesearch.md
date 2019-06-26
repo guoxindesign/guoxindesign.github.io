@@ -1,6 +1,6 @@
 ---
 title: MICAI Finance Research
 layout: post
-cover_image: "/images/micai_research_cover.jpg"
+cover_image: "/images/micairesearch_cover.jpg"
 ---
 ![](images/micai_research.jpg)
