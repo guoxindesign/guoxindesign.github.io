@@ -1,7 +1,7 @@
 ---
 title: Social Platform UX Report
 layout: post
-cover_image: "/images/socialreport_cover.jpg"
+cover_image: "/images/socialreport_cover2.jpg"
 ---
 游戏社交平台
 
